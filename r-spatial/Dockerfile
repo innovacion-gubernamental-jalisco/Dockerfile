@@ -56,6 +56,8 @@ RUN apt-get update \
     geoR \
     geosphere \
     googledrive \ 
+    googleCloudStorageR \
+    googleAuthR  \
     ## from bioconductor
     && R -e "BiocManager::install('rhdf5')"  \
     && R -e "devtools::install_github('loicdtx/bfastSpatial')"\
