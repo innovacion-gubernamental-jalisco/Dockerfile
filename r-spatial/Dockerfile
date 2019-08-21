@@ -54,7 +54,9 @@ RUN apt-get update \
     fasterize\
     spdep \
     geoR \
+    tmap \
     geosphere \
+    gdalUtils \
     googledrive \ 
     googleCloudStorageR \
     googleAuthR  \
