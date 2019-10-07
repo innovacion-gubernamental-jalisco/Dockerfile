@@ -60,6 +60,8 @@ RUN apt-get update \
     googledrive \ 
     googleCloudStorageR \
     googleAuthR  \
+    h2o \
+    np \
     ## from bioconductor
     && R -e "BiocManager::install('rhdf5')"  \
     && R -e "devtools::install_github('loicdtx/bfastSpatial')"\
