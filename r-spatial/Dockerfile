@@ -39,9 +39,11 @@ RUN apt-get update \
     mapdata \
     maptools \
     mapview \
+    mapedit \
     ncdf4 \
     proj4 \
     raster \
+    rasterVis \
     rgdal \
     rgeos \
     rlas \
@@ -60,6 +62,11 @@ RUN apt-get update \
     googledrive \ 
     googleCloudStorageR \
     googleAuthR  \
+    RStoolbox \
+    remote \
+    lubridate \
+    snow \
+    zoo \
     h2o \
     np \
     ## from bioconductor
