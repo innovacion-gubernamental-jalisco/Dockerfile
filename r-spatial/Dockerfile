@@ -69,6 +69,11 @@ RUN apt-get update \
     zoo \
     h2o \
     np \
+    tsibble \ 
+    reshape2 \
+    ROCR \
+    corrplot \
+    ranger \
     ## from bioconductor
     && R -e "BiocManager::install('rhdf5')"  \
     && R -e "devtools::install_github('loicdtx/bfastSpatial')"\
