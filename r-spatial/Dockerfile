@@ -28,6 +28,8 @@ RUN apt-get update \
     tk-dev \
     unixodbc-dev \
   && install2.r --error \
+    shinyjs \
+    rmapshaper \
     RColorBrewer \
     RandomFields \
     RNetCDF \
