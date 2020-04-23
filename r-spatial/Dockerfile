@@ -55,6 +55,7 @@ RUN install2.r --error \
     sp \
     spacetime \
     spatstat \
+    terra \
     #velox\ 
     fasterize\
     spdep \
