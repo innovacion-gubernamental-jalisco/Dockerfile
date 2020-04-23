@@ -55,7 +55,7 @@ RUN install2.r --error \
     sp \
     spacetime \
     spatstat \
-    velox\ 
+    #velox\ 
     fasterize\
     spdep \
     geoR \
