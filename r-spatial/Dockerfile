@@ -1,5 +1,5 @@
 FROM rocker/verse:3.6.3
-MAINTAINER "Carl Boettiger" alexander.quevedo@jalisco.gob.mx
+MAINTAINER "Carl Boettiger" cboettig@ropensci.org
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -28,9 +28,7 @@ RUN apt-get update \
     tk-dev \
     unixodbc-dev
 
-  && install2.r --error \
-    shinyjs \
-    rmapshaper \
+RUN install2.r --error \
     RColorBrewer \
     RandomFields \
     RNetCDF \
@@ -42,42 +40,18 @@ RUN apt-get update \
     mapdata \
     maptools \
     mapview \
-    mapedit \
     ncdf4 \
     proj4 \
     raster \
-    rasterVis \
     rgdal \
     rgeos \
     rlas \
-    devtools\
     sf \
     sp \
     spacetime \
     spatstat \
-    velox\ 
-    fasterize\
     spdep \
     geoR \
-    tmap \
     geosphere \
-    gdalUtils \
-    googledrive \ 
-    googleCloudStorageR \
-    googleAuthR  \
-    RStoolbox \
-    remote \
-    lubridate \
-    snow \
-    zoo \
-    h2o \
-    np \
-    tsibble \ 
-    reshape2 \
-    ROCR \
-    corrplot \
-    ranger \
     ## from bioconductor
-    && R -e "BiocManager::install('rhdf5')"  \
-    && R -e "devtools::install_github('loicdtx/bfastSpatial')"\
-    && R -e "devtools::install_github('16EAGLE/getSpatialData')"
+    && R -e "BiocManager::install('rhdf5', update=FALSE, ask=FALSE)"
