@@ -29,6 +29,8 @@ RUN apt-get update \
     unixodbc-dev
 
 RUN install2.r --error \
+    shinyjs \
+    rmapshaper \
     RColorBrewer \
     RandomFields \
     RNetCDF \
@@ -40,18 +42,42 @@ RUN install2.r --error \
     mapdata \
     maptools \
     mapview \
+    mapedit \
     ncdf4 \
     proj4 \
     raster \
+    rasterVis \
     rgdal \
     rgeos \
     rlas \
+    devtools\
     sf \
     sp \
     spacetime \
     spatstat \
+    velox\ 
+    fasterize\
     spdep \
     geoR \
+    tmap \
     geosphere \
+    gdalUtils \
+    googledrive \ 
+    googleCloudStorageR \
+    googleAuthR  \
+    RStoolbox \
+    remote \
+    lubridate \
+    snow \
+    zoo \
+    h2o \
+    np \
+    tsibble \ 
+    reshape2 \
+    ROCR \
+    corrplot \
+    ranger \
     ## from bioconductor
-    && R -e "BiocManager::install('rhdf5', update=FALSE, ask=FALSE)"
+    && R -e "BiocManager::install('rhdf5', update=FALSE, ask=FALSE)"\
+    && R -e "devtools::install_github('loicdtx/bfastSpatial')"\
+    && R -e "devtools::install_github('16EAGLE/getSpatialData')"
