@@ -1,4 +1,3 @@
-  
 FROM rocker/verse:3.6.3
 MAINTAINER "Carl Boettiger" alexander.quevedo@jalisco.gob.mx
 
