@@ -1,5 +1,6 @@
-FROM rocker/verse:3.6.0
-MAINTAINER "Carl Boettiger" cboettig@ropensci.org
+  
+FROM rocker/verse:3.6.3
+MAINTAINER "Carl Boettiger" alexander.quevedo@jalisco.gob.mx
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -14,7 +15,7 @@ RUN apt-get update \
     libhdf5-dev \
     libjq-dev \
     liblwgeom-dev \
-	libpq-dev \
+    libpq-dev \
     libproj-dev \
     libprotobuf-dev \
     libnetcdf-dev \
@@ -22,11 +23,12 @@ RUN apt-get update \
     libssl-dev \
     libudunits2-dev \
     netcdf-bin \
-	postgis \
+    postgis \
     protobuf-compiler \
-	sqlite3 \
+    sqlite3 \
     tk-dev \
-    unixodbc-dev \
+    unixodbc-dev
+
   && install2.r --error \
     shinyjs \
     rmapshaper \
