@@ -62,6 +62,7 @@ RUN install2.r --error \
     tmap \
     geosphere \
     gdalUtils \
+    googleComputeEngineR \
     googledrive \ 
     googleCloudStorageR \
     googleAuthR  \
