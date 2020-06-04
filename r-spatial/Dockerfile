@@ -61,6 +61,9 @@ RUN install2.r --error \
     spdep \
     geoR \
     tmap \
+    geostatsp \
+    ggmap \ 
+    xlsx \
     geosphere \
     gdalUtils \
     googleComputeEngineR \
