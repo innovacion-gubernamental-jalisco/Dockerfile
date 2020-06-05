@@ -86,5 +86,5 @@ RUN install2.r --error \
     && R -e "BiocManager::install('rhdf5', update=FALSE, ask=FALSE)"\
     && R -e "devtools::install_github('loicdtx/bfastSpatial')"\
     && R -e "devtools::install_github('16EAGLE/getSpatialData')"
-    && R -e "install.packages("INLA", repos=c(getOption("repos"), INLA="https://inla.r-inla-download.org/R/testing"), dep=TRUE)"
+    && R -e "install.packages('INLA', repos=c(getOption('repos'), INLA='https://inla.r-inla-download.org/R/testing'), dep=TRUE)"
 
